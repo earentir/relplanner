@@ -1,0 +1,140 @@
+{
+  "holidays": [
+    {
+      "date": "2025-01-01",
+      "name": "Πρωτοχρονιά (New Years)"
+    },
+    {
+      "date": "2025-01-06",
+      "name": "Θεοφάνεια (Epiphany)"
+    },
+    {
+      "date": "2025-03-03",
+      "name": "Καθαρή Δευτέρα (Shroud Monday)"
+    },
+    {
+      "date": "2025-03-25",
+      "name": "Ημέρα Ανεξαρτησίας (Independence Day)"
+    },
+    {
+      "date": "2025-04-18",
+      "name": "Μεγάλη Παρασκευή (Good Friday)"
+    },
+    {
+      "date": "2025-04-19",
+      "name": "Μεγάλο Σάββατο (Holy Saturday)"
+    },
+    {
+      "date": "2025-04-20",
+      "name": "Κυριακή του Πάσχα (Easter Sunday)"
+    },
+    {
+      "date": "2025-04-21",
+      "name": "Δευτέρα του Πάσχα (Easter Monday)"
+    },
+    {
+      "date": "2025-05-01",
+      "name": "Εργατική Πρωτομαγιά (Labor Day)"
+    },
+    {
+      "date": "2025-06-08",
+      "name": "Πεντηκοστή (Pentescost)"
+    },
+    {
+      "date": "2025-06-09",
+      "name": "Αγίου Πνεύματος (Holy Spirit)"
+    },
+    {
+      "date": "2025-06-17",
+      "name": "VF Spirit Day"
+    },
+    {
+      "date": "2025-08-15",
+      "name": "Αγίου Πνεύματος (Assumption)"
+    },
+    {
+      "date": "2025-10-08",
+      "name": "VF Spirit Day"
+    },
+    {
+      "date": "2025-10-28",
+      "name": "Ημέρα του Όχι (Ochi Day)"
+    },
+    {
+      "date": "2025-12-25",
+      "name": "Χριστούγεννα (Christmas)"
+    },
+    {
+      "date": "2025-12-26",
+      "name": "Σύναξη της Θεοτόκου (Dormition of the Mother of God)"
+    },
+    {
+      "date": "2026-01-01",
+      "name": "Πρωτοχρονιά (New Years)"
+    },
+    {
+      "date": "2026-01-06",
+      "name": "Θεοφάνεια (Epiphany)"
+    },
+    {
+      "date": "2026-02-23",
+      "name": "Καθαρή Δευτέρα (Shroud Monday)"
+    },
+    {
+      "date": "2026-03-25",
+      "name": "Ημέρα Ανεξαρτησίας (Independence Day)"
+    },
+    {
+      "date": "2026-04-10",
+      "name": "Μεγάλη Παρασκευή (Good Friday)"
+    },
+    {
+      "date": "2026-04-11",
+      "name": "Μεγάλο Σάββατο (Holy Saturday)"
+    },
+    {
+      "date": "2026-04-12",
+      "name": "Κυριακή του Πάσχα (Easter Sunday)"
+    },
+    {
+      "date": "2026-04-13",
+      "name": "Δευτέρα του Πάσχα (Easter Monday)"
+    },
+    {
+      "date": "2026-05-01",
+      "name": "Εργατική Πρωτομαγιά (Labor Day)"
+    },
+    {
+      "date": "2026-05-31",
+      "name": "Πεντηκοστή (Pentescost)"
+    },
+    {
+      "date": "2026-06-01",
+      "name": "Αγίου Πνεύματος (Holy Spirit)"
+    },
+    {
+      "date": "2026-08-15",
+      "name": "Κοίμηση της Θεοτόκου (Assumption)"
+    },
+    {
+      "date": "2026-10-28",
+      "name": "Ημέρα του Όχι (Ochi Day)"
+    },
+    {
+      "date": "2026-12-25",
+      "name": "Χριστούγεννα (Christmas)"
+    },
+    {
+      "date": "2026-12-26",
+      "name": "Σύναξη της Θεοτόκου (Dormition of the Mother of God)"
+    },
+    {
+      "date": "2027-01-01",
+      "name": "Πρωτοχρονιά (New Years)"
+    },
+    {
+      "date": "2027-01-06",
+      "name": "Θεοφάνεια (Epiphany)"
+    }
+  ]
+}

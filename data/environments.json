@@ -1,0 +1,67 @@
+{
+  "config": {
+    "displayType": "fullname"
+  },
+  "releaseEnvironments": {
+    "staging": {
+      "background": "#ADD8E6",
+      "foreground": "#000000"
+    },
+    "preproda": {
+      "background": "#FFD700",
+      "foreground": "#000000"
+    },
+    "preprodb": {
+      "background": "#FFB6C1",
+      "foreground": "#000000"
+    },
+    "production": {
+      "background": "#90EE90",
+      "foreground": "#000000"
+    }
+  },
+  "releaseStatuses": {
+    "Planned": {
+      "background": "#90EE90",
+      "foreground": "#000000"
+    },
+    "Done": {
+      "background": "#228B22",
+      "foreground": "#FFFFFF"
+    },
+    "Hotfix Planned": {
+      "background": "#FFB6C1",
+      "foreground": "#000000"
+    },
+    "Hotfix Done": {
+      "background": "#DC143C",
+      "foreground": "#FFFFFF"
+    },
+    "None": {
+      "background": "#f0f0f0",
+      "foreground": "#000000"
+    }
+  },
+  "environments": [
+    {
+      "name": "staging",
+      "displayName": "Staging",
+      "visible": true
+    },
+    {
+      "name": "preproda", 
+      "displayName": "PreProd A",
+      "visible": true
+    },
+    {
+      "name": "preprodb",
+      "displayName": "PreProd B", 
+      "visible": true
+    },
+    {
+      "name": "production",
+      "displayName": "Production",
+      "visible": true
+    }
+  ]
+}

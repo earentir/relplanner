@@ -1,0 +1,9 @@
+data/jira-config.json
+data/releases.json
+static/style.css
+backups/
+
+timeoff
+static/app.js
+server.log
+JIRA_SETUP.md

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+        <title>Release Planning App</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="theme-color" content="#222222">
+    <meta name="mobile-web-app-capable" content="yes">
+  </head>
+  <body class="dark">
+    <!-- Theme Toggle (top right) -->
+    <div id="themeToggle">light</div>
+
+    <!-- Month and Year Selection with Filters -->
+    <div id="controls">
+      <select id="monthSelect"></select>
+      <select id="yearSelect"></select>
+      <button id="todayBtn" title="Today" aria-label="Go to today">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V3a1 1 0 0 1 1-1Zm12 8H5v9h14v-9Zm-2-4H7v1a1 1 0 1 1-2 0V6H5v2h14V6h-0.999v1a1 1 0 1 1-2 0V6Z"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Calendar Container (grid with header row and environment rows) -->
+    <div id="environmentList"></div>
+
+    <!-- Modal Dialog for editing a release -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h3>Edit Release</h3>
+        <!-- Holiday info area (read-only mode) -->
+        <div id="holidayInfo" class="holiday-info"></div>
+        <!-- Editable area (for new or editable release entries) -->
+        <div id="editableArea">
+          <div class="form-group">
+            <label for="releaseStatus">Status:</label>
+            <select id="releaseStatus"></select>
+          </div>
+          <div class="form-group">
+            <label for="feTag">FE Tag:</label>
+            <input type="text" id="feTag" placeholder="e.g. 3.44.0" />
+          </div>
+          <div class="form-group">
+            <label for="beTag">BE Tag:</label>
+            <input type="text" id="beTag" placeholder="e.g. 1.15.0" />
+          </div>
+          <div class="form-group">
+            <label for="releaseName">Release Name:</label>
+            <input type="text" id="releaseName" placeholder="Auto-generated: FE.BE" readonly />
+          </div>
+          <div class="form-group">
+            <label for="jiraTicket">Jira Ticket:</label>
+            <input type="text" id="jiraTicket" placeholder="e.g. REL-46" />
+            <a id="jiraLink" href="#" target="_blank" style="display: none; margin-left: 10px; color: #007bff; text-decoration: none;">🔗 Open Ticket</a>
+            <button type="button" id="loadJiraTickets" style="margin-left: 10px; padding: 4px 8px; font-size: 12px;">📋 Load Tickets</button>
+          </div>
+          <div id="jiraTicketsList" style="display: none; max-height: 200px; overflow-y: auto; border: 1px solid #ccc; margin-top: 10px; padding: 10px; background: #f9f9f9;">
+            <div style="font-weight: bold; margin-bottom: 10px;">Available Jira Tickets:</div>
+            <div id="ticketsContainer"></div>
+          </div>
+              <div class="form-group">
+                <label for="startTime">Start Time:</label>
+                <input type="text" id="startTime" placeholder="20:00" />
+              </div>
+              <div class="form-group">
+                <label for="endDateTime">End Date & Time:</label>
+                <input type="text" id="endDateTime" placeholder="YYYY-MM-DD HH:MM" />
+              </div>
+              <div class="form-group">
+                <label for="dependsOn">Depends On:</label>
+                <select id="dependsOn">
+                  <option value="">No dependency</option>
+                </select>
+              </div>
+        </div>
+        <!-- Modal buttons: Cancel is always visible -->
+        <div class="modal-buttons">
+          <button id="removeButton" class="remove-button">Remove Release</button>
+          <button id="cancelButton">Cancel</button>
+          <button id="saveButton" class="save-button">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Statistics Modal -->
+    <div id="userStatsModal" class="modal">
+      <div class="modal-content">
+        <h3>Environment Statistics</h3>
+        <div id="userStatsName" class="user-stats-name"></div>
+        <div id="userStatsContent" class="user-stats-content"></div>
+        <div class="modal-buttons">
+          <button id="userStatsCloseButton">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Action Button for All Devices -->
+    <div id="actionFab" class="action-fab">+</div>
+
+    <!-- Actions Menu for All Devices -->
+    <div id="actionsMenu" class="actions-menu">
+      <div class="action-close-handle"></div>
+      <div class="actions-title">Quick Actions</div>
+      
+      <div class="action-button" id="actionToggleTheme">Toggle Theme</div>
+      <div class="action-button" id="actionExportData">Export / Backup / Restore</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
